@@ -1,7 +1,7 @@
 @mixin clearfix {
     &::after {
-        content: ""; // nenorime matyti elemento tai naudojam tuscius ''
+        content: ""; // use '' when do not whant see the element
         display: table; //standart for clearfix
-        clear: both; //float left/right
+        clear: both; //for float left/right
     }
 }
