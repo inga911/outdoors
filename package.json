@@ -10,5 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^9.0.0"
+  },
+  "dependencies": {
+    "boxicons": "^2.1.4"
   }
 }
