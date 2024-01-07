@@ -1,6 +1,6 @@
 .btn {
-    &,
 
+    &,
     &:link,
     &:visited {
         text-transform: uppercase;
@@ -15,6 +15,7 @@
         //for the button element
         border: none;
         cursor: pointer;
+        width: max-content;
     }
 
     &:hover {

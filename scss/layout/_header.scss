@@ -3,13 +3,23 @@
     background-image: linear-gradient(to right bottom,
             rgba($color-primary-light, 0.81),
             rgba($color-primary-dark, 0.803)),
-        url("../img/hero.jpg");
+        url("../img/hero-small.jpg");
     background-size: cover;
     background-position: top;
+    position: relative;
     /*when screen sizes changing the picture always be set by top*/
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-    position: relative;
+
+    @media(min-resolution: 192dpi) and (min-width:37.5em), //600px
+
+    (min-width:106.25em) {
+        //1700px
+        background-image: linear-gradient(to right bottom,
+                rgba($color-primary-light, 0.81),
+                rgba($color-primary-dark, 0.803)),
+            url("../img/hero.jpg");
+    }
 
     &__logo-box {
         position: absolute;
